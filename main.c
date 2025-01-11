@@ -99,6 +99,7 @@ int main(int argc, char **argv) {
 	if(ihdr.color_type == SPNG_COLOR_TYPE_INDEXED) fmt2 = SPNG_FMT_RGB8;
 
 	image = malloc(image_size);
+	image2 = malloc(image_size);
 	unsigned char* diff = malloc(image_size);
 
 	if(image == NULL) goto error;
